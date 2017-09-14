@@ -9,7 +9,10 @@ to try this out in Rust without a bunch of messing around with details.
 To setup:
 
 get rust and cargo, per instructions here:
+
 https://www.rust-lang.org/en-US/install.html
+
+This will typically only take a few minutes and is relatively straightforward.
 
 To run:
 
@@ -39,5 +42,5 @@ the details, just want to write some simple code that will use multiple CPUs.
 
 Top:
 
-Running top should show the program using more than 100% of CPU.
+Running top, on linux/bsd, should show the program using more than 100% of CPU.
 
