@@ -1,10 +1,13 @@
 # hello_rust_rayon
 
-Hyper Simple example showing Parallell processing in the Rust language with the Rayon package
-No complicated ideas, graphics, physics, external libs, etc, are required.
-It only uses basic arithmetic, and compares doing so in parallell with doing
-so in singlethreaded mode. It is educational for people who are wanting
-to try this out in Rust without a bunch of messing around with details.
+This is an extremely simple example showing multicore processing in the 
+Rust language with the Rayon package No complicated ideas, graphics, 
+physics, external libs, etc, are required. It only uses basic 
+arithmetic, and compares doing so in parallell with doing so in 
+singlethreaded mode. It is educational for people who are wanting to try 
+this out in Rust without a bunch of messing around with details.
+
+Multicore, aka multithreading, aka multicpu, aka parallell, aka whatever.
 
 To setup:
 
