@@ -1,7 +1,7 @@
 # hello_rust_rayon
 
 This is an extremely simple example showing multicore processing in the 
-Rust language with the Rayon package No complicated ideas, graphics, 
+Rust language with the Rayon package. No complicated ideas, graphics, 
 physics, external libs, etc, are required. It only uses basic 
 arithmetic, and compares doing so in parallell with doing so in 
 singlethreaded mode. It is educational for people who are wanting to try 
