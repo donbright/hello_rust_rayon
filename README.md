@@ -1,13 +1,12 @@
 # hello_rust_rayon
 
-This is an extremely simple example showing multicore processing in the 
-Rust language with the Rayon package. No complicated ideas, graphics, 
-physics, external libs, etc, are required. It only uses basic 
-arithmetic, and compares doing so in parallell with doing so in 
-singlethreaded mode. It is educational for people who are wanting to try 
-this out in Rust without a bunch of messing around with details.
+This is an extremely simple example showing multicore aka multithreaded 
+processing in the Rust language with the Rayon package. No complicated 
+ideas, graphics, physics, external libraries, etc, are required.
 
-Multicore, aka multithreading, aka multicpu, aka parallell, aka whatever.
+The example runs a simple test by performing arithmetic on a large set 
+of integers, once in parallell and once again in serial mode. It prints 
+the time elapsed for each test.
 
 To setup:
 
@@ -25,19 +24,23 @@ To run:
 
 Output:
 
-    building simple vector
-    vector:
-    1 2 . . . 1048573 1048574 
-    vector processed:
-    42593083 1418407359 . . . 513297762 969231052 
-    1048576 elements, parallell elapsed time Duration { secs: 2, nanos: 383588762 }
+    building simple test vectors...
 
-    vector:
-    42593083 1418407359 . . . 513297762 969231052 
-    vector processed:
-    -2116691985 -1682685121 . . . 2047531687 -1259345260 
-    1048576 elements,    single elapsed time Duration { secs: 4, nanos: 794079709 }
-  
+    --parallell threads test--
+    rayon::current_num_threads: 4
+    input vector:
+    1 2 . . . 102397 102398 
+    vector after processing:
+    42593083 1418407359 . . . -2066691175 -1580502428 
+    102400 elements, elapsed time 3.231979772s
+
+    --single thread test--
+    input vector:
+    1 2 . . . 102397 102398 
+    vector after processing:
+    42593083 1418407359 . . . -2066691175 -1580502428 
+    102400 elements, elapsed time 13.428865759s
+
 Why:
 
 This is made for people who don't know anything about Rust, don't care about
